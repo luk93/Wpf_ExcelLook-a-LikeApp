@@ -1,0 +1,23 @@
+﻿<Window x:Class="Wpf_ExcelLook_a_LikeApp.PopUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_ExcelLook_a_LikeApp"
+        mc:Ignorable="d"
+        Title="Insert Excel Data" Height="204" Width="278" WindowStartupLocation="CenterOwner">
+    <Grid Margin="0,0,0,-6" RenderTransformOrigin="0.496,0.532">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="289*"/>
+            <ColumnDefinition Width="111*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Accept" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.646,6.002" Click="Button_Click"/>
+        <Label Content="Row" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="rowTB" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="73,14,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="100" TextChanged="rowTB_TextChanged"/>
+        <Label Content="Column&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="colTB" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="73,36,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="100" TextChanged="TextBox_TextChanged"/>
+        <Label Content="WS Name" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="wsNameTB" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="73,59,0,0" TextWrapping="Wrap" Text="03 ES" VerticalAlignment="Top" Width="100" TextChanged="wsNameTB_TextChanged"/>
+
+    </Grid>
+</Window>
